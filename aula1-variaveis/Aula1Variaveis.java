@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-
-public class Main {
+public class Aula1Variaveis {
 
     public static void  main(String[] args) {
         //<tipo> <nome> = <valor inicial(opicional)>

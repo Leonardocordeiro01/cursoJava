@@ -53,7 +53,7 @@ public class Aula2OperacoesBasicas {
         double measure = 53.234567;
 
         System.out.println("products:");
-        System.out.printf("%s, which price is $ %.2f %n", product1, price1);
+        System.out.printf("%s, which price is $ %.2f %n", product1, price1); // quando o vc quer colocar suas variaveis atraves de marcadores o print deve acabar com f
         System.out.printf("%s, which price is $ %.2f %n", product2, price2);
         System.out.printf("Record: %d yers old, code %d an gender: %s %n", age, code, gender);
         System.out.printf("Meuse with eight decimal place: %f %n", measure);

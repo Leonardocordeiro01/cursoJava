@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Aula12CondicionalTernaria {
-    static public void main(String[] args) {
+     public static void main(String[] args) {
         // SINTAXE
         //(condicao) ? valor_se_verdadeiro : valor_se_falso;
 

@@ -1,5 +1,5 @@
 public class Aula17FunsoesStrings {
-    static  public void main(String[] args){
+      public static void main(String[] args){
         String original =  "abcde FGHIJ ABCD abc DEFG   ";
 
         String s01 = original.toLowerCase();

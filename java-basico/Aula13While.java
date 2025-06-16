@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Aula13While {
-    static public void main(String[] args) {
+     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         // recomendada quando nao sabemos a previamente a quantidade de repetiçao;
         // TRUE: executa e volta;

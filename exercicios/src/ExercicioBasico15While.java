@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ExercicioBasico15While {
-    static public void main(String[] args){
+    public static void main(String[] args){
         //Um Posto de combustíveis deseja determinar qual de seus produtos tem a preferência de seus clientes. Escreva
         //um algoritmo para ler o tipo de combustível abastecido (codificado da seguinte forma: 1.Álcool 2.Gasolina 3.Diesel
         //4.Fim). Caso o usuário informe um código inválido (fora da faixa de 1 a 4) deve ser solicitado um novo código (até

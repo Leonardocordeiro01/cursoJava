@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ExercicioBasico10 {
-    static public void main(String[] args){
+    public static void main(String[] args){
         //codigo   especificação   preço
         //1        xsalada          4,00
         //2        xbacon           4,50

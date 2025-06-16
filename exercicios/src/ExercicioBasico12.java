@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ExercicioBasico12 {
-    static public void main(String[] args) {
+    public static void main(String[] args) {
         //Leia um valor com duas casas decimais, equivalente ao salário de uma pessoa de Lisarb. Em seguida, calcule e
         //mostre o valor que esta pessoa deve pagar de Imposto de Renda, segundo a tabela abaixo.
         //Lembre que, se o salário for R$ 3002.00, a taxa que incide é de 8% apenas sobre R$ 1000.00, pois a faixa de

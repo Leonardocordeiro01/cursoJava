@@ -1,5 +1,5 @@
 public class Aula16bitwise {
-    static public void main(String[] args){
+     public static void main(String[] args){
         // & - "E" bit a bit
         // | - "OU" bit a bit
         // ^ - "OU-exclusivo" bit a bit

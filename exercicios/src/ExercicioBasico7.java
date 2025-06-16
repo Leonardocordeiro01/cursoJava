@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ExercicioBasico7 {
-    static public void main(String[] args){
+    public static void main(String[] args){
 
         //Fazer um programa para ler um número inteiro e dizer se este número é par ou ímpar.
 

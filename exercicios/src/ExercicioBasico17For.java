@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ExercicioBasico17For {
-    static public void main(String[] args){
+    public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int X, N, in, out;
         in = 0;

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Aula15doWhile {
-    static public void main(String[] args){
+     public static void main(String[] args){
         //faça enquanto
         //true: volta
         //false: pula fora

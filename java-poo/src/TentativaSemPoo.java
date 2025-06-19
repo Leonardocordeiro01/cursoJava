@@ -1,15 +1,15 @@
 import java.util.Scanner;
 // MINHA RESOLUÇÃO DO PROBLEMA ANTES DE ESTUDAR O MODULO DE ORIENTAÇÃO A OBJETOS
-public class Main {
+public class TentativaSemPoo {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double areaX, areaY;
 
-        System.out.println("enter the measures of tringle X: ");
+        System.out.println("enter the measures of triangle X: ");
         areaX = readValues();
         System.out.printf("Triangle X area %.2f %n ", areaX);
 
-        System.out.println("enter the measures of tringle Y: ");
+        System.out.println("enter the measures of triangle Y: ");
         areaY = readValues();
         System.out.printf("Triangle Y area %.2f %n ", areaY);
 

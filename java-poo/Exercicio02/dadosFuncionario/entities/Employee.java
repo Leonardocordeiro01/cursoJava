@@ -11,13 +11,15 @@ public class Employee {
     }
 
     public void increaseSalary(double perc){
+        double salaryUpdate = netSalary();
         this.grossSalary = (perc/100) * grossSalary ;
+        this.grossSalary += salaryUpdate;
     }
 
     public String toString() {
         return "update data: "
                 + name
-                + ", "
+                + ", $ "
                 + grossSalary;
     }
 }

@@ -9,24 +9,24 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        Employee employee;
-        employee = new Employee();
+        Employee emp = new Employee();
 
-        System.out.println("Name: ");
-        employee.name = sc.nextLine();
-        System.out.println("Gross Salary: ");
-        employee.grossSalary = sc.nextDouble();
-        System.out.println("Tax: ");
-        employee.tax = sc.nextDouble();
+        System.out.print("Name: ");
+        emp.name = sc.nextLine();
+        System.out.print("Gross salary: ");
+        emp.grossSalary = sc.nextDouble();
+        System.out.print("Tax: ");
+        emp.tax = sc.nextDouble();
 
-        double salaryUpdate = employee.netSalary();
-        System.out.println("employee: "+ employee.name + ", "+ salaryUpdate);
-        System.out.println("which percentage to incriase salary?");
-        double perc = sc.nextDouble();
-        employee.increaseSalary(perc);
+        System.out.println();
+        System.out.println("Employee: " + emp);
+        System.out.println();
+        System.out.print("Which percentage to increase salary? ");
+        double percentage = sc.nextDouble();
+        emp.increaseSalary(percentage);
 
-        System.out.println(employee);
-
+        System.out.println();
+        System.out.println("Updated data: " + emp);
         sc.close();
     }
 }

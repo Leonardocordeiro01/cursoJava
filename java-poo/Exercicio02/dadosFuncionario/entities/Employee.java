@@ -6,20 +6,15 @@ public class Employee {
     public double grossSalary;
     public double tax;
 
-    public double netSalary(){
+    public double netSalary() {
         return grossSalary - tax;
     }
 
-    public void increaseSalary(double perc){
-        double salaryUpdate = netSalary();
-        this.grossSalary = (perc/100) * grossSalary ;
-        this.grossSalary += salaryUpdate;
+    public void increaseSalary(double percentage) {
+        grossSalary += grossSalary * percentage / 100.0;
     }
 
     public String toString() {
-        return "update data: "
-                + name
-                + ", $ "
-                + grossSalary;
+        return name + ", $ " + String.format("%.2f", netSalary());
     }
 }

@@ -6,11 +6,12 @@
       <module fileurl="file://$PROJECT_DIR$/java-poo/Exercicio04/MembrosEstaticos.iml" filepath="$PROJECT_DIR$/java-poo/Exercicio04/MembrosEstaticos.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-poo/NovoExemplo/NovoExemplo.iml" filepath="$PROJECT_DIR$/java-poo/NovoExemplo/NovoExemplo.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-poo/Exercicio01/areaRectangle.iml" filepath="$PROJECT_DIR$/java-poo/Exercicio01/areaRectangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-poo/aula1MetodosEstaticos/aula1MetodosEstaticos.iml" filepath="$PROJECT_DIR$/java-poo/aula1MetodosEstaticos/aula1MetodosEstaticos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-poo/aula2Construtores/aula2Construtores.iml" filepath="$PROJECT_DIR$/java-poo/aula2Construtores/aula2Construtores.iml" />
       <module fileurl="file://$PROJECT_DIR$/curso java.iml" filepath="$PROJECT_DIR$/curso java.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-poo/Exercicio02/dadosFuncionario.iml" filepath="$PROJECT_DIR$/java-poo/Exercicio02/dadosFuncionario.iml" />
       <module fileurl="file://$PROJECT_DIR$/exercicios/exercicios.iml" filepath="$PROJECT_DIR$/exercicios/exercicios.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-poo/java-poo.iml" filepath="$PROJECT_DIR$/java-poo/java-poo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/java-poo/metodosEstaticos/metodosEstaticos.iml" filepath="$PROJECT_DIR$/java-poo/metodosEstaticos/metodosEstaticos.iml" />
     </modules>
   </component>
 </project>

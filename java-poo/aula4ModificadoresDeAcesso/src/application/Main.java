@@ -14,15 +14,15 @@ public class Main {
         System.out.println("price of product: ");
         double price = sc.nextDouble();
 
+        System.out.println("Update price: " + product.getPrice());
+
+        System.out.println("Product data: " + product);
+
         Product product = new Product(name, price);
 
         product.setName("Computer");
         System.out.println("update name: " + product.getName());
         product.setPrice(1200.00);
-        System.out.println("Update price: " + product.getPrice());
-
-        System.out.println("Product data: " + product);
-
         System.out.println("Enter the number of product to be added in stock ");
         int quantity = sc.nextInt();
         product.addProducts(quantity);

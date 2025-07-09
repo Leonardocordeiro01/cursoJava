@@ -15,9 +15,18 @@ public class Main {
 
         Person person = new Person(name, number);
 
-
-
-
+        System.out.println("Is there na initial deposit (y/n)? ");
+        String answer = sc.nextLine();
+        double initialDeposit;
+        while ( answer == "y" || answer == "n") {
+            if (answer == "y") {
+                initialDeposit = sc.nextDouble();
+            } else if (answer == "n") {
+                initialDeposit = 0.00;
+            } else {
+                System.out.println("Invalid answer: ");
+            }
+        }
 
         sc.close();
     }

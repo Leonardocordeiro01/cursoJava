@@ -3,6 +3,7 @@ package application;
 
 import entities.Product;
 
+
 import java.util.Scanner;
 
 public class Main {
@@ -14,11 +15,11 @@ public class Main {
         System.out.println("price of product: ");
         double price = sc.nextDouble();
 
+        Product product = new Product(name, price);
+
         System.out.println("Update price: " + product.getPrice());
 
         System.out.println("Product data: " + product);
-
-        Product product = new Product(name, price);
 
         product.setName("Computer");
         System.out.println("update name: " + product.getName());

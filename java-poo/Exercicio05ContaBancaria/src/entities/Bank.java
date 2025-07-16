@@ -14,7 +14,7 @@ public class Bank {
 
     }
 
-    public double newDeposit(){
+    public double newDeposit( double deposit ){
         return this.deposit += deposit;
     }
 

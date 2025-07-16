@@ -19,22 +19,13 @@ public class Main {
         String answer = sc.nextLine();
         sc.nextLine();
 
-        double initialDeposit;
+        double initialDeposit = (answer == "y" || answer == "Y") ? initialDeposit = sc.nextDouble() : 0.00;
 
-        while ( answer == "y" || answer == "n") {
-            if (answer == "y") {
-                initialDeposit = sc.nextDouble();
-            } else if (answer == "n") {
-                initialDeposit = 0.00;
-            } else {
-                System.out.println("Invalid answer: ");
-                answer = sc.nextLine();
-            }
-        }
+        System.out.println(initialDeposit);
         Bank bank = new Bank(number, name, initialDeposit);
+        bank.newDeposit(initialDeposit);
 
         System.out.println("Account data: " + bank);
-
 
        sc.close();
     }

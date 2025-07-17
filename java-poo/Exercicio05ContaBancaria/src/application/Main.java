@@ -17,15 +17,27 @@ public class Main {
 
         System.out.println("Is there na initial deposit (y/n)? ");
         String answer = sc.nextLine();
-        sc.nextLine();
 
-        double initialDeposit = (answer == "y" || answer == "Y") ? initialDeposit = sc.nextDouble() : 0.00;
+        double initialDeposit = 0.00;
+        if (answer.equals("y") || answer.equals("Y")) {
+            System.out.println("enter initial deposit value: ");
+            initialDeposit = sc.nextDouble();
+        }
 
         System.out.println(initialDeposit);
-        Bank bank = new Bank(number, name, initialDeposit);
+        Bank bank = new Bank(number, name);
         bank.newDeposit(initialDeposit);
-
         System.out.println("Account data: " + bank);
+
+        System.out.println("Enter a deposit value: ");
+        initialDeposit = sc.nextDouble();
+        bank.newDeposit(initialDeposit);
+        System.out.println("Update account data: " + bank);
+
+        System.out.println("Enter a withdraw value: ");
+        initialDeposit = sc.nextDouble();
+        bank.newWithdraw(initialDeposit);
+        System.out.println("Update account data: " + bank);
 
        sc.close();
     }

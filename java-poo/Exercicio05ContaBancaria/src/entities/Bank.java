@@ -14,8 +14,19 @@ public class Bank {
 
     }
 
-    public double newDeposit( double deposit ){
-        return this.deposit += deposit;
+    public Bank(int number,  String  person) {
+        this.person = person;
+        this.number = number;
+
+    }
+
+    public void newDeposit( double deposit ){
+        this.deposit += deposit;
+    }
+
+    public void newWithdraw( double deposit ){
+        this.deposit -= deposit ;
+        this.deposit -= 5;
     }
 
     public String toString() {

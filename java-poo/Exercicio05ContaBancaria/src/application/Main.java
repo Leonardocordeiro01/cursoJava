@@ -3,41 +3,50 @@ package application;
 import entities.Bank;
 
 import java.util.Scanner;
+import  java.util.Locale;
 
 public class Main {
     public static void main(String[] args){
+
         Scanner sc = new Scanner(System.in);
+        Locale.setDefault(Locale.US);
+        Bank bank;
 
         System.out.println("Enter account number: ");
         int number = sc.nextInt();
-        sc.nextLine();
 
         System.out.println("Enter account holder: ");
+        sc.nextLine();
         String name = sc.nextLine();
 
         System.out.println("Is there na initial deposit (y/n)? ");
-        String answer = sc.nextLine();
+        char answer = sc.next().charAt(0);
 
-        double initialDeposit = 0.00;
-        if (answer.equals("y") || answer.equals("Y")) {
+
+        if (answer == 'y') {
             System.out.println("enter initial deposit value: ");
-            initialDeposit = sc.nextDouble();
+            double initialDeposit = sc.nextDouble();
+            bank =  new Bank(number, name, initialDeposit);
+        } else {
+            bank = new Bank(number, name);
         }
 
-        System.out.println(initialDeposit);
-        Bank bank = new Bank(number, name);
-        bank.newDeposit(initialDeposit);
-        System.out.println("Account data: " + bank);
+        System.out.println();
+        System.out.println("Account data: ");
+        System.out.println(bank);
 
+        System.out.println();
         System.out.println("Enter a deposit value: ");
-        initialDeposit = sc.nextDouble();
-        bank.newDeposit(initialDeposit);
-        System.out.println("Update account data: " + bank);
+        double depositValue = sc.nextDouble();
+        bank.deposit(depositValue);
+        System.out.println("Update account data: " );
+        System.out.println(bank);
 
         System.out.println("Enter a withdraw value: ");
-        initialDeposit = sc.nextDouble();
-        bank.newWithdraw(initialDeposit);
-        System.out.println("Update account data: " + bank);
+        double withdrawValue = sc.nextDouble();
+        bank.withdraw(withdrawValue);
+        System.out.println("Update account data: ");
+        System.out.println(bank);
 
        sc.close();
     }

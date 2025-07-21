@@ -2,37 +2,52 @@ package entities;
 
 public class Bank {
 
-    private final int number;
-    private String  person;
-    private double deposit;
+    private int number;
+    private String holder;
+    private double balance;
 
-
-    public Bank(int number,  String  person, double deposit ) {
-        this.deposit = deposit;
-        this.person = person;
+    public Bank(int number, String holder) {
         this.number = number;
-
+        this.holder = holder;
     }
 
-    public Bank(int number,  String  person) {
-        this.person = person;
+    public Bank(int number, String holder, double initialDeposit) {
         this.number = number;
-
+        this.holder = holder;
+        deposit(initialDeposit);
     }
 
-    public void newDeposit( double deposit ){
-        this.deposit += deposit;
+    public int getNumber() {
+        return number;
     }
 
-    public void newWithdraw( double deposit ){
-        this.deposit -= deposit ;
-        this.deposit -= 5;
+    public String getHolder() {
+        return holder;
+    }
+
+    public void setHolder(String holder) {
+        this.holder = holder;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        balance -= amount + 5.0;
     }
 
     public String toString() {
-        return String.format("Account %d, Holder: %s, Balance %.2f%n: ",
-                number,
-                person,
-                deposit);
+        return "Account "
+                + number
+                + ", Holder: "
+                + holder
+                + ", Balance: $ "
+                + String.format("%.2f", balance);
+
     }
 }

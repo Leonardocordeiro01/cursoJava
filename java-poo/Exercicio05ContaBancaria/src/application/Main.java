@@ -44,7 +44,7 @@ public class Main {
 
         System.out.println("Enter a withdraw value: ");
         double withdrawValue = sc.nextDouble();
-        bank.withdraw(withdrawValue);
+        bank.withdraw( withdrawValue);
         System.out.println("Update account data: ");
         System.out.println(bank);
 
